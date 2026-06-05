@@ -1,0 +1,15 @@
+{
+  "originHash" : "7d60be09b91c623e3ea8143633a73d454f2fc9f2001b92d3fc5e9857d899d0d6",
+  "pins" : [
+    {
+      "identity" : "swiftui_package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sachinarkasali944/SwiftUI_Package.git",
+      "state" : {
+        "revision" : "84318a6d205a07b76ed4f6c4ada0a577eb49abe9",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

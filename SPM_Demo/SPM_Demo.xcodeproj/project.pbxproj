@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14CDA3AB2FD29E3B009E8EFA /* UtilityKit in Frameworks */ = {isa = PBXBuildFile; productRef = 14CDA3AA2FD29E3B009E8EFA /* UtilityKit */; };
 		14CDA3AE2FD2A76A009E8EFA /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 14CDA3AD2FD2A76A009E8EFA /* MyLibrary */; };
 		14CDA3B12FD2A7B6009E8EFA /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 14CDA3B02FD2A7B6009E8EFA /* MyLibrary */; };
+		14CDA3EA2FD312B2009E8EFA /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 14CDA3E92FD312B2009E8EFA /* MyLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CDA3EA2FD312B2009E8EFA /* MyLibrary in Frameworks */,
 				14CDA3B12FD2A7B6009E8EFA /* MyLibrary in Frameworks */,
 				14CDA3AE2FD2A76A009E8EFA /* MyLibrary in Frameworks */,
-				14CDA3AB2FD29E3B009E8EFA /* UtilityKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,9 +121,9 @@
 			);
 			name = SPM_Demo;
 			packageProductDependencies = (
-				14CDA3AA2FD29E3B009E8EFA /* UtilityKit */,
 				14CDA3AD2FD2A76A009E8EFA /* MyLibrary */,
 				14CDA3B02FD2A7B6009E8EFA /* MyLibrary */,
+				14CDA3E92FD312B2009E8EFA /* MyLibrary */,
 			);
 			productName = SPM_Demo;
 			productReference = 14CDA3272FD1EADE009E8EFA /* SPM_Demo.app */;
@@ -208,8 +208,7 @@
 			mainGroup = 14CDA31E2FD1EADE009E8EFA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				14CDA3A92FD29E3B009E8EFA /* XCLocalSwiftPackageReference "../../../../../../../Downloads/MyUtilityPackage" */,
-				14CDA3AF2FD2A7B6009E8EFA /* XCLocalSwiftPackageReference "../../../swiftUIcomponents/MyLibrary" */,
+				14CDA3E82FD312B2009E8EFA /* XCRemoteSwiftPackageReference "SwiftUI_Package" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 14CDA3282FD1EADE009E8EFA /* Products */;
@@ -595,28 +594,29 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		14CDA3A92FD29E3B009E8EFA /* XCLocalSwiftPackageReference "../../../../../../../Downloads/MyUtilityPackage" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../../../../../Downloads/MyUtilityPackage;
+/* Begin XCRemoteSwiftPackageReference section */
+		14CDA3E82FD312B2009E8EFA /* XCRemoteSwiftPackageReference "SwiftUI_Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sachinarkasali944/SwiftUI_Package.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
-		14CDA3AF2FD2A7B6009E8EFA /* XCLocalSwiftPackageReference "../../../swiftUIcomponents/MyLibrary" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../swiftUIcomponents/MyLibrary;
-		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		14CDA3AA2FD29E3B009E8EFA /* UtilityKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UtilityKit;
-		};
 		14CDA3AD2FD2A76A009E8EFA /* MyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MyLibrary;
 		};
 		14CDA3B02FD2A7B6009E8EFA /* MyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+		14CDA3E92FD312B2009E8EFA /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14CDA3E82FD312B2009E8EFA /* XCRemoteSwiftPackageReference "SwiftUI_Package" */;
 			productName = MyLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -1,5 +1,4 @@
 import SwiftUI
-import UtilityKit // From MyUtilityPackage
 import MyLibrary   // From the newly added MyLibrary!
 
 struct ContentView: View {
@@ -10,7 +9,6 @@ struct ContentView: View {
     @State private var isLoading = false
     
     // Instantiate our SPM package formatter
-    private let formatter = GreetingFormatter()
     
     var body: some View {
         ZStack {
@@ -44,11 +42,6 @@ struct ContentView: View {
                 // 1. GlassCard Container from MyLibrary
                 GlassCard {
                     VStack(spacing: 20) {
-                        Text(formatter.greeting(for: name))
-                            .font(.system(.title3, design: .rounded))
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
                         
                         // Input field inside the glass card
                         VStack(alignment: .leading, spacing: 8) {
@@ -106,8 +99,6 @@ struct ContentView: View {
                 VStack(spacing: 16) {
                     HStack(spacing: 12) {
                         // Custom GradientBadge from UtilityKit
-                        GradientBadge(text: "UtilityKit Views", colors: [.orange, .red])
-                        GradientBadge(text: "MyLibrary Cards", colors: [.teal, .blue])
                     }
                     
                     VStack(spacing: 12) {
