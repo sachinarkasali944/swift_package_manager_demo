@@ -27,12 +27,28 @@
 			remoteGlobalIDString = 14CDA3262FD1EADE009E8EFA;
 			remoteInfo = SPM_Demo;
 		};
+		14CDA3F32FD3164A009E8EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14CDA31F2FD1EADE009E8EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14CDA3262FD1EADE009E8EFA;
+			remoteInfo = SPM_Demo;
+		};
+		14CDA4002FD316D3009E8EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14CDA31F2FD1EADE009E8EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14CDA3262FD1EADE009E8EFA;
+			remoteInfo = SPM_Demo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		14CDA3272FD1EADE009E8EFA /* SPM_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPM_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CDA3342FD1EAE1009E8EFA /* SPM_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPM_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CDA33E2FD1EAE1009E8EFA /* SPM_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPM_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14CDA3EF2FD3164A009E8EFA /* SPM_DemoTests_new.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPM_DemoTests_new.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14CDA3FC2FD316D3009E8EFA /* SPM_DemoTests_newunit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPM_DemoTests_newunit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -49,6 +65,16 @@
 		14CDA3412FD1EAE1009E8EFA /* SPM_DemoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SPM_DemoUITests;
+			sourceTree = "<group>";
+		};
+		14CDA3F02FD3164A009E8EFA /* SPM_DemoTests_new */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SPM_DemoTests_new;
+			sourceTree = "<group>";
+		};
+		14CDA3FD2FD316D3009E8EFA /* SPM_DemoTests_newunit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SPM_DemoTests_newunit;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -78,6 +104,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14CDA3EC2FD3164A009E8EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14CDA3F92FD316D3009E8EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +127,8 @@
 				14CDA3292FD1EADE009E8EFA /* SPM_Demo */,
 				14CDA3372FD1EAE1009E8EFA /* SPM_DemoTests */,
 				14CDA3412FD1EAE1009E8EFA /* SPM_DemoUITests */,
+				14CDA3F02FD3164A009E8EFA /* SPM_DemoTests_new */,
+				14CDA3FD2FD316D3009E8EFA /* SPM_DemoTests_newunit */,
 				14CDA3282FD1EADE009E8EFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +139,8 @@
 				14CDA3272FD1EADE009E8EFA /* SPM_Demo.app */,
 				14CDA3342FD1EAE1009E8EFA /* SPM_DemoTests.xctest */,
 				14CDA33E2FD1EAE1009E8EFA /* SPM_DemoUITests.xctest */,
+				14CDA3EF2FD3164A009E8EFA /* SPM_DemoTests_new.xctest */,
+				14CDA3FC2FD316D3009E8EFA /* SPM_DemoTests_newunit.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +219,52 @@
 			productReference = 14CDA33E2FD1EAE1009E8EFA /* SPM_DemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		14CDA3EE2FD3164A009E8EFA /* SPM_DemoTests_new */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14CDA3F52FD3164A009E8EFA /* Build configuration list for PBXNativeTarget "SPM_DemoTests_new" */;
+			buildPhases = (
+				14CDA3EB2FD3164A009E8EFA /* Sources */,
+				14CDA3EC2FD3164A009E8EFA /* Frameworks */,
+				14CDA3ED2FD3164A009E8EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14CDA3F42FD3164A009E8EFA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				14CDA3F02FD3164A009E8EFA /* SPM_DemoTests_new */,
+			);
+			name = SPM_DemoTests_new;
+			packageProductDependencies = (
+			);
+			productName = SPM_DemoTests_new;
+			productReference = 14CDA3EF2FD3164A009E8EFA /* SPM_DemoTests_new.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14CDA3FB2FD316D3009E8EFA /* SPM_DemoTests_newunit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14CDA4022FD316D3009E8EFA /* Build configuration list for PBXNativeTarget "SPM_DemoTests_newunit" */;
+			buildPhases = (
+				14CDA3F82FD316D3009E8EFA /* Sources */,
+				14CDA3F92FD316D3009E8EFA /* Frameworks */,
+				14CDA3FA2FD316D3009E8EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14CDA4012FD316D3009E8EFA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				14CDA3FD2FD316D3009E8EFA /* SPM_DemoTests_newunit */,
+			);
+			name = SPM_DemoTests_newunit;
+			packageProductDependencies = (
+			);
+			productName = SPM_DemoTests_newunit;
+			productReference = 14CDA3FC2FD316D3009E8EFA /* SPM_DemoTests_newunit.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +283,14 @@
 						TestTargetID = 14CDA3262FD1EADE009E8EFA;
 					};
 					14CDA33D2FD1EAE1009E8EFA = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 14CDA3262FD1EADE009E8EFA;
+					};
+					14CDA3EE2FD3164A009E8EFA = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 14CDA3262FD1EADE009E8EFA;
+					};
+					14CDA3FB2FD316D3009E8EFA = {
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = 14CDA3262FD1EADE009E8EFA;
 					};
@@ -218,6 +316,8 @@
 				14CDA3262FD1EADE009E8EFA /* SPM_Demo */,
 				14CDA3332FD1EAE1009E8EFA /* SPM_DemoTests */,
 				14CDA33D2FD1EAE1009E8EFA /* SPM_DemoUITests */,
+				14CDA3EE2FD3164A009E8EFA /* SPM_DemoTests_new */,
+				14CDA3FB2FD316D3009E8EFA /* SPM_DemoTests_newunit */,
 			);
 		};
 /* End PBXProject section */
@@ -238,6 +338,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		14CDA33C2FD1EAE1009E8EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14CDA3ED2FD3164A009E8EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14CDA3FA2FD316D3009E8EFA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,6 +382,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14CDA3EB2FD3164A009E8EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14CDA3F82FD316D3009E8EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -280,6 +408,16 @@
 			isa = PBXTargetDependency;
 			target = 14CDA3262FD1EADE009E8EFA /* SPM_Demo */;
 			targetProxy = 14CDA33F2FD1EAE1009E8EFA /* PBXContainerItemProxy */;
+		};
+		14CDA3F42FD3164A009E8EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14CDA3262FD1EADE009E8EFA /* SPM_Demo */;
+			targetProxy = 14CDA3F32FD3164A009E8EFA /* PBXContainerItemProxy */;
+		};
+		14CDA4012FD316D3009E8EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14CDA3262FD1EADE009E8EFA /* SPM_Demo */;
+			targetProxy = 14CDA4002FD316D3009E8EFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -553,6 +691,90 @@
 			};
 			name = Release;
 		};
+		14CDA3F62FD3164A009E8EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKBL94B6WF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Myself.SPM-DemoTests-new";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPM_Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SPM_Demo";
+			};
+			name = Debug;
+		};
+		14CDA3F72FD3164A009E8EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKBL94B6WF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Myself.SPM-DemoTests-new";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPM_Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SPM_Demo";
+			};
+			name = Release;
+		};
+		14CDA4032FD316D3009E8EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKBL94B6WF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Myself.SPM-DemoTests-newunit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPM_Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SPM_Demo";
+			};
+			name = Debug;
+		};
+		14CDA4042FD316D3009E8EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKBL94B6WF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Myself.SPM-DemoTests-newunit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPM_Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SPM_Demo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,6 +810,24 @@
 			buildConfigurations = (
 				14CDA34F2FD1EAE1009E8EFA /* Debug */,
 				14CDA3502FD1EAE1009E8EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14CDA3F52FD3164A009E8EFA /* Build configuration list for PBXNativeTarget "SPM_DemoTests_new" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CDA3F62FD3164A009E8EFA /* Debug */,
+				14CDA3F72FD3164A009E8EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14CDA4022FD316D3009E8EFA /* Build configuration list for PBXNativeTarget "SPM_DemoTests_newunit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CDA4032FD316D3009E8EFA /* Debug */,
+				14CDA4042FD316D3009E8EFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
