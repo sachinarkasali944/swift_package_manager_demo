@@ -1,5 +1,7 @@
 # 📦 Swift Package Manager (SPM) Deep Dive Tutorial & Demo
 
+> **Checkout status:** The committed snapshot includes `SPM_Demo.xcworkspace` and the demo app, but not the local `MyUtilityPackage` or `MyLibrary` source folders described below. Those sections are tutorial instructions; create the packages or restore them locally before expecting the full workspace example to build. Paths from the original author's machine have been removed from this README.
+
 Welcome to the **Swift Package Manager (SPM) Tutorial**! This repository serves as both a step-by-step learning guide and a working demo project. 
 
 Here, we demonstrate how to build a custom Swift Package called **`UtilityKit`**, organize it with an **Xcode Workspace**, and integrate it into a SwiftUI App (**`SPM_Demo`**).
@@ -73,7 +75,7 @@ You can create a Swift Package directly from the command line:
 
 The `Package.swift` file is the heart of your package. It is written in Swift and configures your package's targets, products, and dependencies.
 
-Here is the `Package.swift` we configured for `UtilityKit` ([Package.swift](file:///Users/KZS1KOR/Documents/learning/Projects/Interview_practice/swift_package_manager_demo/swift_package_manager_demo/MyUtilityPackage/Package.swift)):
+Here is the `Package.swift` we configured for `UtilityKit` (`Package.swift`):
 
 ```swift
 // swift-tools-version: 6.3
@@ -117,7 +119,7 @@ let package = Package(
 > [!IMPORTANT]
 > By default, Swift classes, structs, functions, and initializers have `internal` access control. If you do not explicitly declare them as **`public`** or **`open`**, they will **NOT** be visible when the package is imported into your app.
 
-### 1. Reusable Logic Target ([GreetingFormatter.swift](file:///Users/KZS1KOR/Documents/learning/Projects/Interview_practice/swift_package_manager_demo/swift_package_manager_demo/MyUtilityPackage/Sources/UtilityKit/GreetingFormatter.swift))
+### 1. Reusable Logic Target (`GreetingFormatter.swift`)
 This utility formats greeting strings depending on the time of day:
 
 ```swift
@@ -139,7 +141,7 @@ public struct GreetingFormatter {
 }
 ```
 
-### 2. Reusable UI Target ([GradientBadge.swift](file:///Users/KZS1KOR/Documents/learning/Projects/Interview_practice/swift_package_manager_demo/swift_package_manager_demo/MyUtilityPackage/Sources/UtilityKit/GradientBadge.swift))
+### 2. Reusable UI Target (`GradientBadge.swift`)
 This SwiftUI view demonstrates how packages can export visual UI components:
 
 ```swift
@@ -173,7 +175,7 @@ public struct GradientBadge: View {
 
 Testing packages is simple. Create files in the `Tests/` target directory and import the module using `@testable import <ModuleName>`.
 
-We implemented the unit tests inside [UtilityKitTests.swift](file:///Users/KZS1KOR/Documents/learning/Projects/Interview_practice/swift_package_manager_demo/swift_package_manager_demo/MyUtilityPackage/Tests/UtilityKitTests/UtilityKitTests.swift).
+We implemented the unit tests inside `UtilityKitTests.swift`.
 
 ### Running Tests from Command Line
 In the `MyUtilityPackage` folder, run:
@@ -195,7 +197,7 @@ We created a workspace called `SPM_Demo.xcworkspace` containing the following st
 - `MyUtilityPackage/` (The local Swift Package folder)
 
 ### 🔗 How to Link the Local Package:
-1. Open [SPM_Demo.xcworkspace](file:///Users/KZS1KOR/Documents/learning/Projects/Interview_practice/swift_package_manager_demo/swift_package_manager_demo/SPM_Demo.xcworkspace) in Xcode.
+1. Open `SPM_Demo.xcworkspace` in Xcode.
 2. In the Navigator pane, you will see both the `SPM_Demo` project and the `MyUtilityPackage` folder.
 3. Select the `SPM_Demo` project file at the top of the sidebar.
 4. Select the **`SPM_Demo` Target** and navigate to the **General** tab.
@@ -211,7 +213,7 @@ We created a workspace called `SPM_Demo.xcworkspace` containing the following st
 
 Once linked, you can use the package like any other dependency in your app code.
 
-We updated [ContentView.swift](file:///Users/KZS1KOR/Documents/learning/Projects/Interview_practice/swift_package_manager_demo/swift_package_manager_demo/SPM_Demo/SPM_Demo/ContentView.swift):
+We updated `ContentView.swift`:
 
 ```swift
 import SwiftUI
